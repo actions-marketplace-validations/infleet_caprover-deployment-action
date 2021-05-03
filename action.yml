@@ -11,13 +11,13 @@ inputs:
   password:
     description: 'CapRover admin password. Use GitHub Secrets ($\{{ secrets.CAPROVER_PASSWORD }}) for better security.'
     required: true
-  appname:
+  app-name:
     description: 'App on the CapRover server that you want to deploy to.'
     required: true
   branch:
     description: 'Git branch which will be deployed onto the app.'
     required: false
-    default: 'master'
+    default: 'main'
   tarball:
     description: 'Tarball which will be deployed onto the app.'
     required: false
